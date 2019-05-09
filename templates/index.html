@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+<style>
+
+body {
+background-color: #cccccc;
+height: 100%; 
+width="100%"
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+</head>
+
+    <div class="bg-box">
+    <body background="{{url_for('static', filename='img/back.jpg')}}" >
+    <!-- ######## This is a comment, visible only in the source editor  ######## -->
+    <img src="{{url_for('static', filename='img/carefull.png')}}" />
+    <hr />
+    <p>Try our special neural network to detect vehicle damage</p>
+    <h4></h4>
+    <h1 style="color: #4485b8;"></h1>
+    <hr />
+    
+    <p>Upload your Image to predict its type.</p>
+    
+    <div class= "box">
+          <form action = "http://localhost:5000/predicted" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+    </form>
+    
+    
+    </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body, html {
+  height: 100%;
+}
+
+.background {
+ background-position: center;
+ background-size: cover;
+ filter: blur(4px);
+ -webkit-filter: blur(4px);
+
+ /* Full height */
+ height: 100%; 
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.bg-box {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20;
+  font-family: Arial;
+  color: silver;
+}
+
+p {
+  font-size: 25px;
+  font-family:"Courier New", Courier, monospace;
+  color: silver;
+}
+
+.box {
+  margin: auto;
+  border: 5px solid silver;
+  text-align: center;
+  height: 80;
+  width: 300;
+}
